@@ -1,0 +1,131 @@
+/* Base custom font configuration */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Overwrite the standard colors with our professional dark terminal palette */
+  --color-zinc-950: #0b0e11;
+  --color-zinc-900: #181a20;
+  --color-zinc-850: #22252a;
+  --color-zinc-800: #2b2f36;
+  --color-zinc-750: #3a3f4a;
+  --color-zinc-700: #474d57;
+  --color-zinc-650: #575e6b;
+  --color-zinc-650\/60: rgba(87, 94, 107, 0.6);
+  --color-zinc-600: #707a8a;
+  --color-zinc-555: #848e9c;
+  --color-zinc-550: #848e9c;
+  --color-zinc-500: #9eabbc;
+  --color-zinc-450: #9eabbc;
+  --color-zinc-400: #eaecef;
+  --color-zinc-300: #eaecef;
+  --color-zinc-200: #eaecef;
+  --color-zinc-150: #ffffff;
+  --color-zinc-100: #ffffff;
+
+  --color-yellow-500: #f0b90b;
+  --color-yellow-600: #d9a508;
+  --color-yellow-500\/10: rgba(240, 185, 11, 0.1);
+
+  --color-green-400: #0ecb81;
+  --color-green-500: #0ecb81;
+  --color-green-600: #0b9e64;
+  --color-green-800: #02c076;
+  --color-green-900: #0a4f35;
+  --color-green-950: #042618;
+
+  --color-red-400: #f6465d;
+  --color-red-500: #f6465d;
+  --color-red-600: #cf3046;
+  --color-red-650: #cf3046;
+  --color-red-900: #5c1421;
+  --color-red-950: #3c0c14;
+}
+
+/* Global scrollbar and page styles to match our premium dark layout */
+body {
+  background-color: #0b0e11;
+  color: #eaecef;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #0b0e11;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #2b2f36;
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #3a3f4a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Markdown styling inside AI analyst reports */
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #2b2f36;
+  padding-bottom: 0.25rem;
+}
+
+.markdown-body h1 {
+  font-size: 1rem;
+  color: #f0b90b; /* Align with pro-trade identity */
+}
+
+.markdown-body h2 {
+  font-size: 0.95rem;
+  color: #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 0.85rem;
+  color: #eaecef;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+  color: #eaecef;
+  line-height: 1.6;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  list-style-type: disc;
+  color: #848e9c;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #f0b90b;
+  padding-left: 0.75rem;
+  color: #848e9c;
+  font-style: italic;
+  margin: 0.5rem 0;
+}

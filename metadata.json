@@ -1,0 +1,6 @@
+{
+  "name": "专业证券交易端",
+  "description": "提供极速行情、真实K线、深度五档盘口与高级仿真交易的专业证券投资终端。搭载智能AI投资顾问，精准计算盈亏，支持自设本金与自主多股配置交易。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
